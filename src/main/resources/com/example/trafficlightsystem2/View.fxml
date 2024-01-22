@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <Rectangle id="GreyBox" arcHeight="5.0" arcWidth="5.0" fill="#707273" height="400.0" layoutX="188.0" layoutY="-2.0"
+              stroke="BLACK" strokeType="INSIDE" width="200.0"/>
+   <Circle id="redLight" fx:id="redLight" layoutX="288.0" layoutY="69.0" radius="55.0" stroke="BLACK" strokeType="INSIDE"/>
+   <Circle id="AmberLight" fx:id="amberLight" fill="#050505" layoutX="288.0" layoutY="200.0" radius="55.0" stroke="BLACK"
+           strokeType="INSIDE"/>
+   <Circle id="GreenLight" fx:id="greenLight" fill="#050505" layoutX="288.0" layoutY="331.0" radius="55.0" stroke="BLACK"
+           strokeType="INSIDE"/>
+</Pane>
