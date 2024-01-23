@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <ImageView fitHeight="438.0" fitWidth="333.0" layoutX="133.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../puffin.jpg" />
+         </image></ImageView>
+      <Rectangle id="RedMan" fx:id="RedMan" arcHeight="5.0" arcWidth="5.0" fill="#0b0b0b" height="99.0" layoutX="271.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+      <Rectangle id="GreenMan" fx:id="GreenMan" arcHeight="5.0" arcWidth="5.0" height="91.0" layoutX="233.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" width="131.0" />
+      <Button id="PushButton" fx:id="PushButton" layoutX="275.0" layoutY="301.0" mnemonicParsing="false" opacity="0.0" prefHeight="45.0" prefWidth="49.0" text="Button" onAction="#buttonPushed"/>
+   </children>
+</AnchorPane>

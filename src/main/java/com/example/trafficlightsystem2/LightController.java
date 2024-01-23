@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.scene.shape.Rectangle;
 
 
 public class LightController implements Initializable, PropertyChangeListener {
@@ -23,6 +24,10 @@ public class LightController implements Initializable, PropertyChangeListener {
     @FXML
     Circle greenLight;
 
+
+
+    @FXML
+    Rectangle GreenMan;
 
     public void turnRedLightOn() {
         redLight.setFill(javafx.scene.paint.Color.RED);
@@ -73,5 +78,6 @@ public class LightController implements Initializable, PropertyChangeListener {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        turnAmberLightOn();
     }
 }

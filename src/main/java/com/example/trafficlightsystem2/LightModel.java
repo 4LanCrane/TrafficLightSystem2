@@ -1,5 +1,6 @@
 package com.example.trafficlightsystem2;
 
+import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
@@ -41,17 +42,18 @@ public class LightModel {
     public int setTimer(String state) {
         switch(state) {
             case "Red":
-                timer = 5;
+                timer = 10;
                 break;
             case "Green":
-                timer = 5;
+                timer = 10;
                 break;
             case "Amber":
-                timer = 1;
+                timer = 2;
                 break;
             case "RedAmber":
-                timer = 1;
+                timer = 2;
                 break;
+
             default:
                 timer = 0;
                 break;
@@ -112,6 +114,27 @@ public class LightModel {
             }
         }).start();
 
+    }
+
+
+    public void pedWaiting() {
+        String theState = previousState(state);
+            switch(theState) {
+                case "Red":
+                    System.out.println("walk");
+                    break;
+                case "Green":
+                    System.out.println("Waiting");
+                    break;
+                case "Amber":
+                  System.out.println("Waiting");
+                    break;
+                case "RedAmber":
+                    System.out.println("Waiting");
+                    break;
+                default:
+                    break;
+            }
     }
 
 }
