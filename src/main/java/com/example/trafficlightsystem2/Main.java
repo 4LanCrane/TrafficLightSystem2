@@ -11,6 +11,7 @@ import java.io.IOException;
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main extends Application {
+    static LightModel model1 = new LightModel();
 
     public static void main(String[] args) {
         launch();
@@ -55,6 +56,10 @@ public class Main extends Application {
         stage2.setScene(scene2);
         stage2.show();
 
+    }
+
+    public static LightModel getModel() {
+        return model1;
     }
 
 }

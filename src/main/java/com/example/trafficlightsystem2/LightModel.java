@@ -84,6 +84,30 @@ public class LightModel {
         return oldState;
     }
 
+    public String nextState(String theState) {
+        String nextState;
+        switch (theState) {
+            case "Red":
+                nextState = "RedAmber";
+                break;
+            case "RedAmber":
+                nextState = "Green";
+                break;
+            case "Green":
+                nextState = "Amber";
+                break;
+            case "Amber":
+                nextState = "Red";
+                break;
+            default:
+                nextState = "Red";
+                break;
+        }
+        return nextState;
+    }
+
+
+
     public void runTimer(String state) {
         int timer = setTimer(state);
         while (timer > 0) {
@@ -114,6 +138,7 @@ public class LightModel {
             }
         }).start();
 
+
     }
 
 
@@ -138,3 +163,4 @@ public class LightModel {
     }
 
 }
+
